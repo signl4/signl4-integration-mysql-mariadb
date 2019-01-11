@@ -5,7 +5,7 @@ Integrate SIGNL4 with a database for mobile alerting via app, push, text, voice 
 In industry and production scenarios a lot of machine data is available. This can be the temperature of certain machines, timespans of certain processes, pressure, power consumption, vibration, etc. The data is (or can be made) available in database tables and sometimes it is already being displayed on dashboards on computer screens. Of course in daily operations it is hard to look at each relevant dashboard all the time. Therefore, it makes sense to send relevant information about critical situations to the responsible users in real time no matter where they are. That is where SIGNL4 comes in.
 Integrating SIGNL4 with any database can enhance your daily operations with an extension to your mobile team in the field or on the shop floor.
 
-![MySQL](SIGNL4-DB-Screenshot.png)
+![SIGNL4](SIGNL4-DB-Screenshot.png)
 
 ## How it Works
 All it takes to check relevant information and to send alerts using SIGNL4 is a little script with a suitable SQL query that checks the database in regular intervals.
