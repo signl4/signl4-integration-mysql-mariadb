@@ -55,10 +55,14 @@ In MySQL or MariaDB you can create a database table as follows.
 Now you can create script in PHP (or whatever language you prefer) to do the following
 
 1. Connect to the database
+
 2. Execute an SQL Select query to retrieve relevant records
 In our case we just check for temperatures higher than 80 degrees within the last ten minutes.
+
 SELECT [MachineName], MAX(Temperature) FROM MachineData WHERE Timestamp > DATEADD(MINUTE - 10, SYSDATETIME()) AND Temperature > 80 GROUP BY [MachineName];
+
 You can adapt the query to fit your needs. You can also to some more sophisticated operations here like the average, maximum, number of occurrences or process data from multiple tables as well.
+
 3. Send the Alert using SIGNL4
 If the above SQL query retrieved some records it means we have a situation worth communicating. In our script we use the SIGNL4 webhook to send the data to SIGNL4.
 
