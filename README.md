@@ -69,7 +69,7 @@ If the above SQL query retrieved some records it means we have a situation worth
 #### Run the Script in regular Intervals
 
 Of course, we would like to check the database in regular intervals. Therefore in Linux / UNIX we can use a so-called cronjob.
-In ordert to create a cronjobs in Linux UNIX you can use the followinf command:
+In order to create a cronjobs in Linux UNIX you can use the following command:
 
 crontab -e
 
